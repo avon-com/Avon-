@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AVON КЫРГЫЗСТАН</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f4fb;
+      color: #4b2a62;
+      margin: 0; padding: 0;
+    }
+
+    header {
+      background-color: #fff;
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      letter-spacing: 2px;
+      color: #7a4a99;
+      margin: 0;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .catalog {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 220px;
+      margin: 15px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .info-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 30px 20px;
+      flex-direction: row;
+    }
+
+    .info-box {
+      background-color: #fff;
+      padding: 20px;
+      width: 350px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .info-box h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .info-box p {
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .info-box a {
+      color: #7a4a99;
+      font-weight: bold;
+      text-decoration: underline;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+
+    .info-box a:hover {
+      color: #5d3979;
+    }
+
+    .social-links {
+      text-align: center;
+      margin: 30px 0 50px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      color: white;
+      background-color: #7a4a99;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background-color: #5d3979;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #7a4a99;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 800px) {
+      .info-section {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .info-box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AVON КЫРГЫЗСТАН</h1>
+</header>
+
+<section class="catalog">
+  <div class="product">
+    <img src="https://i.postimg.cc/B6f7z4dw/IMG-20250505-191937-992.webp" alt="AVON product 1" />
+  </div>
+  <div class="product">
+    <img src="https://i.postimg.cc/FKLnG7nL/IMG-20250505-191938-318.webp" alt="AVON product 2" />
+  </div>
+  <div class="product">
+    <img src="https://i.postimg.cc/8z30hhwG/IMG-20250505-191938-433.webp" alt="AVON product 3" />
+  </div>
+  <div class="product">
+    <img src="https://i.postimg.cc/L5HCHv4t/image.jpg" alt="AVON product 4" />
+  </div>
+  <div class="product">
+    <img src="https://i.postimg.cc/9MPg5s2X/image.jpg" alt="AVON product 5" />
+  </div>
+</section>
+
+<section class="info-section">
+  <div class="info-box" onclick="window.open('https://wa.me/996555045445', '_blank')">
+    <h2>Стань представителем AVON</h2>
+    <p>Получай скидку до 30% и подарок на первый заказ! Отличная возможность для мам и тех, кто хочет совмещать уход за семьей с доходом.</p>
+    <a href="https://wa.me/996555045445" target="_blank" onclick="event.stopPropagation()">Жми, чтобы узнать подробнее</a>
+  </div>
+
+  <div class="info-box" onclick="window.open('https://wa.me/996555045445', '_blank')">
+    <h2>Стань координатором</h2>
+    <p>Работай онлайн, строй команду и получай стабильную зарплату, бонусы и подарки от AVON. Идеально для тех, кто хочет развиваться не выходя из дома.</p>
+    <a href="https://wa.me/996555045445" target="_blank" onclick="event.stopPropagation()">Жми, чтобы узнать подробнее</a>
+  </div>
+</section>
+
+<section class="social-links">
+  <a href="https://wa.me/996555045445" target="_blank">Написать в WhatsApp</a>
+  <a href="https://www.instagram.com/avon_kg.beauty?igsh=MWxuaHBqeTlxc2t5bA==" target="_blank">Мы в Instagram</a>
+</section>
+
+<footer>
+  &copy; 2025 AVON КЫРГЫЗСТАН. Все права защищены.
+</footer>
+
+</body>
+</html>
